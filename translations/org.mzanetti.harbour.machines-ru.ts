@@ -4,9 +4,11 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="38"/>
-        <source>My Cover</source>
-        <translation type="unfinished"></translation>
+        <location filename="../qml/cover/CoverPage.qml" line="54"/>
+        <source>Machines
+vs.
+Machines</source>
+        <translation>Tower Defence - Машины</translation>
     </message>
 </context>
 <context>
@@ -14,22 +16,22 @@
     <message>
         <location filename="../qml/ui/info/Credits.qml" line="24"/>
         <source>Game development</source>
-        <translation type="unfinished"></translation>
+        <translation>Разработчик игры</translation>
     </message>
     <message>
         <location filename="../qml/ui/info/Credits.qml" line="28"/>
         <source>Development</source>
-        <translation type="unfinished"></translation>
+        <translation>Разработка</translation>
     </message>
     <message>
         <location filename="../qml/ui/info/Credits.qml" line="31"/>
         <source>Design/Artwork</source>
-        <translation type="unfinished"></translation>
+        <translation>Дизайн/Рисунки</translation>
     </message>
     <message>
         <location filename="../qml/ui/info/Credits.qml" line="39"/>
         <source>Level packs</source>
-        <translation type="unfinished"></translation>
+        <translation>Пакеты уровней</translation>
     </message>
 </context>
 <context>
@@ -37,7 +39,7 @@
     <message>
         <location filename="../qml/ui/InfoPage.qml" line="35"/>
         <source>Version: 1.3</source>
-        <translation type="unfinished"></translation>
+        <translation>Версия: 1.3</translation>
     </message>
 </context>
 <context>
@@ -45,7 +47,7 @@
     <message>
         <location filename="../qml/components/ModalOverlay.qml" line="71"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 </TS>

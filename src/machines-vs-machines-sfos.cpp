@@ -38,7 +38,7 @@
 #include <QStandardPaths>
 #include <QQuickView>
 
-#include <sailfishapp.h>
+#include <auroraapp.h>
 
 #include "engine.h"
 #include "settings.h"
@@ -103,16 +103,16 @@ int main(int argc, char *argv[])
     //return SailfishApp::main(argc, argv);
 
 
-    QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
+    QScopedPointer<QGuiApplication> app(Aurora::Application::application(argc, argv));
 
-    app->setApplicationName("harbour-machines-vs-machines-sfos");
-    app->setOrganizationDomain("com.github.mzanetti");
-    app->setOrganizationName("com.github.mzanetti");
+    app->setApplicationName("harbour.machines");
+    app->setOrganizationDomain("org");
+    app->setOrganizationName("mzanetti");
     qmlRegisterSingletonType<Settings>("harbour.machines.vs.machines.sfos.Machines", 1, 0, "SettingsBackend", createSettings);
 
-    QScopedPointer<QQuickView> view(SailfishApp::createView());
+    QScopedPointer<QQuickView> view(Aurora::Application::createView());
 
-    view->setSource(SailfishApp::pathTo("qml/harbour-machines-vs-machines-sfos.qml"));
+    view->setSource(Aurora::Application::pathTo("qml/harbour-machines-vs-machines-sfos.qml"));
     view->setTitle("Machines vs. Machines");
     view->showFullScreen();
 

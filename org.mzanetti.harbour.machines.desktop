@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=org.mzanetti.harbour.machines
+Exec=org.mzanetti.harbour.machines
+Name=Machines vs Machines
+Name[ru]=TD's Машины
+
+
+[X-Application]
+Permissions=UserDirs;RemovableMedia;Audio
+OrganizationName=org.mzanetti
+ApplicationName=harbour.machines

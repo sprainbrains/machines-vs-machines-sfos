@@ -10,10 +10,10 @@
 #   - translation filenames have to be changed
 
 # The name of your application
-TARGET = harbour-machines-vs-machines-sfos
+TARGET = org.mzanetti.harbour.machines
 TARGET_DATA_DIR = /usr/share/$${TARGET}
 
-CONFIG += sailfishapp C++11
+CONFIG +=auroraapp C++11
 
 SOURCES += src/machines-vs-machines-sfos.cpp \
     src/tower.cpp \
@@ -48,9 +48,9 @@ HEADERS += src/tower.h \
         src/boardproxymodel.h \
 
 
-OTHER_FILES += rpm/machines-vs-machines-sfos.changes.in \
+OTHER_FILES += rpm/org.mzanetti.harbour.machines.in \
     translations/*.ts \
-    harbour-machines-vs-machines-sfos.desktop \
+    org.mzanetti.harbour.machines.desktop \
     qml/graphics/* \
     data/lpbuild/*
 
@@ -63,14 +63,9 @@ data.files = $${TARGET_DATA}/lpbuild/*
 data.path = $${TARGET_DATA_DIR}/data
 INSTALLS += data
 
-#copydata.commands = $(COPY_DIR) $$PWD/data/lpbuild /home/deploy/installroot/usr/share/harbour-machines-vs-machines-sfos/data/
-#target.depends = $(target) copydata
-#export(first.depends)
-#export(copydata.commands)
-
 QMAKE_EXTRA_TARGETS += target # copydata
 
-SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172 256x256
+AURORAAPP_ICONS = 86x86 108x108 128x128 172x172 256x256
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -80,7 +75,8 @@ CONFIG += sailfishapp_i18n
 # planning to localize your app, remember to comment out the
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
-TRANSLATIONS += translations/machines-vs-machines-sfos-de.ts
+TRANSLATIONS += translations/org.mzanetti.harbour.machines-de.ts \
+                translations/org.mzanetti.harbour.machines.ts.
 
 DISTFILES += \
-    rpm/machines-vs-machines-sfos.spec
+    rpm/org.mzanetti.harbour.machines.spec
